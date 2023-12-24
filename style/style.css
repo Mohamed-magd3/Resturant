@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+    background-color: #343a40 !important;
+}
+
+/* a {
+    list-style: none !important;
+    text-decoration: none !important;
+} */
+
+/*  */
+
+/* .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: auto !important;
+} */
+
+.logo-img {
+    width: 70px;
+}
+
+.navbar {
+    box-shadow: none !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: white !important;
+    font-size: 2rem;
+}
+
+.navbar li a {
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+
+
+.title {
+    color: rgb(255, 255, 255) !important;
+    font-size: 50px !important;
+    font-weight: bold;
+
+    display: inline-block;
+    margin: 0 0.2rem;
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+/* Slider */
+
+.slider {
+    position: relative;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100vh;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(30%);
+    text-align: center;
+    object-fit: cover;
+}
+
+.slider-titles {
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 20%;
+    left: 34%;
+
+}
+
+.fresh-food,
+.fresh-food2 {
+
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+    text-align: center;
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+.fresh-food {
+    font-size: 100px;
+}
+
+.fresh-food2 {
+    color: white;
+    font-size: 70px;
+
+}
+
+.btn-discover {
+    padding: 7px 30px;
+    font-size: 30px;
+    background-color: #ef0707;
+    color: white;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+/* About */
+
+.about-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    padding-top: 6rem;
+    margin: auto;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.about-text-container {
+    margin-top: -50px;
+    width: 30%;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 0.5px solid white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0px 0px 5px 5px rgba(255, 255, 255, 0.19);
+}
+
+
+
+/* Our Menu */
+
+
+.our-menu-title {
+    margin-top: 5rem !important;
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.menu-cards-container {
+    margin-top: 7rem !important;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    text-align: center;
+    margin: auto;
+
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+
+}
+
+.menu-cards {
+    position: relative;
+}
+
+.menu-cards img {
+    width: 380px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.price-container {
+    position: absolute;
+    top: 55%;
+    left: calc(50% - 4rem);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu-cards:hover .price-container {
+    opacity: 1;
+    top: 35%;
+}
+
+.menu-cards:hover .menu-img {
+    opacity: 0.5;
+
+}
+
+.price {
+    position: absolute;
+    font-size: 20px;
+    background-color: #ef0707;
+    width: 8rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-price {
+    margin-top: 2.4rem;
+    font-size: 20px;
+    background-color: #ef0707;
+    width: 8rem;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+/* Booking */
+
+.booking-container {
+    border-top: 0.5px solid rgb(162, 162, 162);
+    padding-top: 30px;
+    text-align: center;
+    width: 90%;
+    margin: auto !important;
+    margin-top: 40px;
+
+}
+
+.booking-container h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.inputs-container input {
+    width: 300px;
+    height: 60px;
+    border: #493e3e 2px solid;
+    color: black;
+    padding: 0px 1rem;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-right: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.booking-container button {
+    background-color: #ef0707;
+    color: white;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 40px;
+    padding: 0px 40px;
+    border-radius: 10px;
+    /* width: 120px; */
+}
+
+/* food list */
+
+.food-list {
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+.food-list h1 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+
+}
+
+.food-menu {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.food-menu p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.food-menu-img {
+    position: relative;
+    margin-top: 30px;
+    width: 90%;
+    height: auto;
+    border-radius: 40px;
+    border: white solid 0.5px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+}
+
+.food-menu-img img {
+    width: 100%;
+    height: auto;
+}
+
+.food-menu-img p {
+    width: 90%;
+    padding: 1rem 0;
+    margin: auto;
+}
+
+
+
+.food-menu-price,
+.juice-price {
+    top: 20px;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    background-color: #ef0707;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+/* Juice */
+.juice-title {
+    font-size: 4rem !important;
+}
+
+.juice-container {
+    border-top: 0.5px solid rgb(162, 162, 162);
+    padding-top: 30px;
+    text-align: center;
+    width: 90%;
+    margin-top: 7rem !important;
+    margin: auto;
+}
+
+.juice-container p {
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.juice-container img {
+    width: 100%;
+}
+
+/* End Juice */
+
+.footer {
+    border-top: 1px solid white;
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+    background-color: #343a40 !important;
+    font-size: 1rem !important;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.call,
+.social {
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.call {
+    text-align: center;
+}
+
+.social i {
+    width: 35px;
+    text-align: center;
+    margin-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social i:hover {
+    transform: translateY(-5px);
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
